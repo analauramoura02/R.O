@@ -1,0 +1,236 @@
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+}
+.navbar{
+    background-color: #003366;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.navbar-brand{
+        align-items: flex-end;
+    }
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #003366;
+    color: white;
+    width: 260px;
+    padding: 20px;
+    border-radius: 10px;
+    height: 580px;
+}
+
+.sidebar h1 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar li a:hover {
+    background-color: #003366;
+}
+
+.sidebar li svg {
+    margin-right: 10px;
+}
+
+.main {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.main h2 {
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza horizontalmente */
+
+}
+
+.user-profile {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.user-profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.user-profile .user-name {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group .calendar-icon {
+    position: relative;
+    top: 8px;
+    margin-right: 10px;
+}
+
+.form-group .calendar-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+.form-group .add-icon {
+    position: relative;
+    top: 8px;
+    margin-right: 10px;
+}
+
+.form-group .add-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Espaçamento entre o botão e o textarea */
+.form-group > button {
+    margin-bottom: 15px;
+}
+
+/* Centraliza os botões */
+.form-group .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Estilos para os botões */
+.btn-primary {
+    background-color:#003366 !important;
+    border-color: #003366 !important;
+    color: white;
+    border-radius: 5px;
+
+}
+
+.btn-primary-min {
+    background-color:#008000 !important;
+    border-color: #008000 !important;
+    color: white;
+    border-radius: 8px;
+    padding: 7px 37px;
+    font-size: 15px;
+
+
+}
+
+.btn-primary:hover {
+    background-color: darken(#002244, 10%) !important;
+    border-color: darken(#002244, 10%) !important;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.btn-secondary {
+    background-color: #db0000 !important;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 7px 37px;
+    font-size: 15px;
+
+
+
+
+
+}
+
+.btn-secondary:hover {
+    background-color: darken(#db0000, 10%) !important;
+    border-color: darken(#ddd, 10%) !important;
+}
+
+/* Função para escurecer a cor */
+@function darken($color, $amount) {
+  $hsl =  hsl($color);
+  $lightness = $hsl[3];
+  $lightness -= $amount;
+  @return hsl($hsl[1], $hsl[2], $lightness);
+}
+
+/* Estilos para o textarea */
+.form-group textarea {
+    resize: none;
+}
+
+/* Estilo para o campo de adicionar alunos */
+.form-group .add-icon {
+    display: flex;
+    align-items: center;
+}
+
+.form-group .add-icon svg {
+    margin-right: 10px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 110%;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    width: 100%;
+  }
+
+.button-container button {
+    margin: 0 10px; /* Adiciona margem para separar os botões */
+  }
+
+
