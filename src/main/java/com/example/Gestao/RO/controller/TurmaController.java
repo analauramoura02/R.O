@@ -5,11 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/aluno")
-public class AlunoController {
+@RequestMapping("/turma")
+public class TurmaController {
 
-    @GetMapping("/cadAluno")
-    public String cadAluno(){
-        return "aluno/cadAluno";
+    @GetMapping("/form-inserir")
+    public String formInserir(){
+        return "turma/form-inserir";
     }
+
+
 }

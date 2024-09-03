@@ -1,0 +1,160 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+}
+.navbar{
+    background-color: #003366;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.navbar-brand{
+    align-items: flex-end;
+}
+
+.container {
+    display: flex;
+    height: 120vh;
+}
+
+.sidebar {
+    background-color: #003366;
+    color: white;
+    width: 260px;
+    padding: 20px;
+    border-radius: 10px;
+    height: 980px;
+}
+
+.sidebar h1 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar li a:hover {
+    background-color: #003366;
+}
+
+.sidebar li svg {
+    margin-right: 10px;
+}
+
+.main {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.main h2 {
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza horizontalmente */
+
+}
+
+.user-profile {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.user-profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.user-profile .user-name {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+img{
+    width: 220px;
+    height: 60px;
+}
+.container2 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group img {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.form-group input[type="file"] {
+    width: auto;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-group button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-group button[type="reset"] {
+    background-color: #dc3545;
+}
+
+.button-group button:hover {
+    opacity: 0.9;
+}
+
+
