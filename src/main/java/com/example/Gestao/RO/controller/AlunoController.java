@@ -8,8 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/aluno")
 public class AlunoController {
 
-    @GetMapping("/cadAluno")
-    public String cadAluno(){
-        return "aluno/cadAluno";
+    @GetMapping("/form-inserir")
+    public String formInserir(){
+        return "aluno/form-inserir";
     }
+
+
 }
