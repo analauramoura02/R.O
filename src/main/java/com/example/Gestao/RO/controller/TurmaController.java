@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/turma")
 public class TurmaController {
 
-    @GetMapping("/form-inserir")
+    @GetMapping("/cadTurmas")
     public String formInserir(){
-        return "turma/form-inserir";
+        return "turma/cadTurmas";
     }
 
 
