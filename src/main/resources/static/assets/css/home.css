@@ -1,0 +1,66 @@
+/* Define a altura mínima para o formulário de login e alinha-o ao centro da tela */
+.no-gutters {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container-fluid{
+    align-items: center;
+}
+.row{
+    width: 100%;
+    height: 1000%;
+}
+
+
+.login-form {
+    height: 90%;
+    width: 100%;
+    padding: 10%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #fff;
+}
+
+#forgot-password {
+    color: #003F72 ;
+    text-decoration: none;
+    align-items: end;
+}
+
+.button{
+    background-color: #003F72;
+    color: #fff;
+}
+
+#forgot-password:hover {
+    text-decoration: underline;
+}
+.form-control{
+    background-color: rgb(212, 212, 214);
+}
+.img-fluid {
+    height: 90%;
+    width: 100%;
+    left: 1000%;
+    max-width: 100vh;
+    border-radius: 5px;
+
+
+}
+
+.btn{
+    background-color: #003F72;
+    color: #fff;
+    width: 100%;
+
+}
+
+.img{
+    height: 40%;
+    width: 100%;
+    align-items: center;
+}
+
+
