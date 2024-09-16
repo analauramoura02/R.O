@@ -64,6 +64,12 @@
 		</dependency>
 	</dependencies>
 
+	<div class="col-sm-12">
+		<!-- Mensagem de erro caso o campo nome tenha algum erro de validação -->
+		<span class="mensagem" th:if="${#fields.hasErrors('nome')}"
+			  th:errors="*{nome}"></span>
+	</div>
+
 	<build>
 		<plugins>
 			<plugin>
