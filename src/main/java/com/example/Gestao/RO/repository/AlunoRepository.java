@@ -11,7 +11,7 @@ public interface AlunoRepository extends JpaRepository<Aluno, Long> {
 
     Aluno findByEmail(String email);
 
-    Aluno findByCpf(String cpf);
+    //Aluno findByCpf(String cpf);
 
 
     // Pesquisa o email e o id seja diferente
@@ -20,7 +20,7 @@ public interface AlunoRepository extends JpaRepository<Aluno, Long> {
 
     // Pesquisa o cpf e o id seja diferente
     // do id que está sendo alterado
-    Aluno findByCpfAndIdNot(String cpf, Long id);
+    //Aluno findByCpfAndIdNot(String cpf, Long id);
 
 
 

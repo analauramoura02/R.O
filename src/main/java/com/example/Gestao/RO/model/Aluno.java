@@ -1,44 +1,31 @@
 package com.example.Gestao.RO.model;
 
-import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
-
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
-// A de Aluno
-@DiscriminatorValue(value = "A")
-public class Aluno extends Pessoa{
+public class Aluno {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String nome;
+    private String turma;
+    private String endereco;
+    private String telefone;
+    private String matricula;
+    private String email;
 
 
-    @NotNull(message = "A matrícula deve ser informada")
-    private Long matricula;
 
-
-    @ManyToMany
-    private List<Turma> turmas;
-
-
-    public Long getMatricula() {
-        return matricula;
-    }
-
-    public void setMatricula(Long matricula) {
-        this.matricula = matricula;
-    }
-
-
-    public List<Turma> getTurmas() {
-        return turmas;
-    }
-
-    public void setTurmas(List<Turma> turmas) {
-        this.turmas = turmas;
-    }
 
 
 }
