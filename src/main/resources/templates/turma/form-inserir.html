@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/cadturma.css">
 </head>
+
 <body>
 <nav class="navbar col-14 m-auto navbar-expand-lg position-fixed bg-body-tertiary fixed-top" style="z-index:999;">
     <div class="container-fluid">
@@ -25,12 +26,13 @@
     </div>
     </div>
 </nav>
+
 <br><br><br>
 <div class="container">
 
     <div class="sidebar">
         <div class="logo">
-            <img src="/assets/img/senai.png" alt="SENAI Logo">
+            <img src="/assets/img/senai2.png" alt="SENAI Logo">
         </div>
         <ul>
             <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
@@ -54,17 +56,20 @@
     <div class="main">
 
         <h2>Cadastro de Turma</h2>
-        <form action="#" th:action="@{/curso/inserir}" th:object="${curso}" method="post">
+        <form action="#" th:action="@{/turma/inserir}" th:object="${turma}" method="post">
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="nome-turma">Nome da turma:</label>
-                    <input type="text" class="form-control" id="nome-turma" placeholder="Nome da Turma" th:field="*{curso}">
+                    <input class="form-control" id="nome-turma" placeholder="Nome da Turma" th:field="*{curso}"
+                           type="text">
                 </div>
+
                 <div class="form-group col-md-6">
                     <label for="docente">Docente:</label>
                     <input type="text" class="form-control" id="docente" placeholder="Nome do Docente" th:field="*{docente}">
                 </div>
             </div>
+
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="periodo">Período:</label>
@@ -74,7 +79,7 @@
                     <label for="inicio-curso">Início do curso:</label>
                     <div class="input-group">
 
-                        <input type="date" class="form-control" id="inicio-curso" style="width: 200px" th:field="*{inicio}">
+                        <input type="date" class="form-control" id="inicio-curso" style="width: 200px" th:field="*{dataInicio}">
                     </div>
                 </div>
                 <div class="form-group col-md-3">
@@ -85,7 +90,7 @@
 
                                 </svg></span>
                         </div>
-                        <input type="date" class="form-control" id="final-curso" style="width: 200px" th:field="*{final}">
+                        <input type="date" class="form-control" id="final-curso" style="width: 200px" th:field="*{dataConclusao}">
                     </div>
                 </div>
             </div>
@@ -102,7 +107,9 @@
                     <button class="btn-primary-min">Salvar</button>
                 </div>
             </div>
+
         </form>
+
     </div>
 </div>
 

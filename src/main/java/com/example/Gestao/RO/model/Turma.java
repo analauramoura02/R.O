@@ -18,11 +18,8 @@ public class Turma {
     private Long id;
     private String curso;
 
-    @ManyToMany
-    private List<Aluno> alunos;
-
-    @ManyToMany
-    private List<Professor> professores;
+    private String docente;
+    private String periodo;
 
     @Basic
     @Temporal(TemporalType.DATE)

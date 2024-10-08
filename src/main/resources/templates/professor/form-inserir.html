@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html" lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENAI - Cadastro de Aluno</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/cadAluno.css">
+</head>
+<body>
+<!-- fragments nav -->
+<div th:replace="~{/fragments/nav.html :: nav}"></div>
+<br><br><br>
+<div class="container">
+
+    <!-- fragments sidebar -->
+    <div th:replace="~{/fragments/sidebar.html :: sidebar}"></div>
+
+    <div class="main">
+        <div class="container2">
+            <form action="#" th:action="@{/professor/salvar}" th:object="${prof}" method="post">
+                <h1>Cadastro de Professor</h1>
+                <div class="form-group">
+                    <label for="foto">Foto do Professor:</label>
+                    <input type="file" id="foto" name="foto">
+                    <img id="foto-preview" src="#" alt="Pré-visualização da foto" style="display: none;"
+                         th:field="*{foto}">
+
+                </div>
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o nome completo" th:field="*{nome}"/>
+                </div>
+                <div class="form-group">
+                    <label for="turma">Turma:</label>
+                    <input type="text" id="turma" name="turma" placeholder="Digite a turma" th:field="*{turma}">
+                </div>
+                <div class="form-group">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Digite o endereço"
+                           th:field="*{endereco}">
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" placeholder="Digite o telefone"
+                           th:field="*{telefone}">
+                </div>
+                <div class="form-group">
+                    <label for="matricula">Matrícula:</label>
+                    <input type="text" id="matricula" name="matricula" placeholder="Digite a matrícula"
+                           th:field="*{matricula}">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite o e-mail" th:field="*{email}">
+                </div>
+                <div class="button-group">
+                    <button type="submit">Salvar</button>
+                    <button type="reset">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
+

@@ -23,9 +23,6 @@ public class Aluno {
     private String telefone;
     private String matricula;
     private String email;
-
-
-
-
+    private String foto;
 
 }
