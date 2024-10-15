@@ -20,6 +20,13 @@ public class AlunoController {
     private AlunoRepository alunoRepository;
 
 
+    @GetMapping
+    public String listagem(Model model){
+        model.addAttribute("alunos", alunoRepository.findAll());
+        return "aluno/listagem";
+    }
+
+
     // Carrega o form-inserir.html
     @GetMapping("/form-inserir")
     public String formInserir(Model model){

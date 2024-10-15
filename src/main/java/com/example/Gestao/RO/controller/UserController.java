@@ -4,7 +4,6 @@ import com.example.Gestao.RO.model.User;
 import com.example.Gestao.RO.repository.UserRepository;
 import com.example.Gestao.RO.util.FileUploadUtil;
 import jakarta.validation.Valid;
-import org.apache.tomcat.util.http.fileupload.FileUpload;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
