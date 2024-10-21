@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html" lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SENAI - Notificação</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/noti.css">
+    <div th:replace="~{/fragments/heads.html :: heads}"></div>
 
 </head>
 <body>
-<!-- fragments nav -->
-<div th:replace="~{/fragments/nav.html :: nav}"></div>
+
 <br><br><br>
 <div class="container">
 
+    <!-- fragments nav -->
+    <div th:replace="~{/fragments/nav.html :: nav}"></div>
     <!-- fragments sidebar -->
     <div th:replace="~{/fragments/sidebar.html :: sidebar}"></div>
+
     <div class="main">
         <div class="container2">
             <h1>Notificação</h1>
@@ -30,14 +29,9 @@
 
 
 </div>
-</div>
-
-
-
-
-
+</div
 </body>
-
 
 </body>
 </html>
+<div th:replace="~{/fragments/scripts.html :: scripts}"></div>

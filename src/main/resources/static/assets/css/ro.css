@@ -45,7 +45,28 @@ body {
     margin-left: 10px;
 }
 
+/* Estilo para o Dropdown */
+.dropdown-menu {
+    background-color: #ffffff; /* Define a cor de fundo do menu igual à navbar */
+    border: none; /* Remove a borda do menu */
+    border-radius: 5px; /* Define o arredondamento das bordas */
+}
 
+.dropdown-item {
+    color: #003366; /* Define a cor do texto do menu */
+    padding: 10px 20px; /* Ajuste o espaçamento do texto */
+    font-weight: normal; /* Define o peso do texto */
+}
+
+.dropdown-item:hover {
+    background-color: #d3d3d3; /* Define a cor do hover */
+}
+.dropdown-toggle {
+    background-color: #003366; /* Define a cor de fundo do botão */
+    color: white; /* Define a cor do texto do botão */
+    box-shadow: none; /* Remove a sombra do botão */
+    border: none;
+}
 
 .container {
     display: flex;
@@ -58,7 +79,7 @@ body {
     width: 260px;
     padding: 20px;
     border-radius: 10px;
-    height: 880px;
+    height: 650px;
 }
 
 .sidebar h1 {
@@ -197,34 +218,11 @@ h1 {
 }
 
 .logo img {
-    width: 220px;
+    width: 200px;
     max-width: 350px;
     display: block;
     margin: 0 auto;
 }
 
-
-/* Estilo para o Dropdown */
-.dropdown-menu {
-    background-color: #003366; /* Define a cor de fundo do menu igual à navbar */
-    border: none; /* Remove a borda do menu */
-    border-radius: 5px; /* Define o arredondamento das bordas */
-}
-
-.dropdown-item {
-    color: #003366; /* Define a cor do texto do menu */
-    padding: 10px 20px; /* Ajuste o espaçamento do texto */
-    font-weight: normal; /* Define o peso do texto */
-}
-
-.dropdown-item:hover {
-    background-color: #d3d3d3; /* Define a cor do hover */
-}
-.dropdown-toggle {
-    background-color: #003366; /* Define a cor de fundo do botão */
-    color: white; /* Define a cor do texto do botão */
-    box-shadow: none; /* Remove a sombra do botão */
-    border: none;
-}
 
 

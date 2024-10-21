@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html" lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SENAI - Cadastro de Aluno</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/cadAluno.css">
+    <div th:replace="~{/fragments/heads.html :: heads}"></div>
+
 </head>
 <body>
 
-<!-- fragments nav -->
-<div th:replace="~{/fragments/nav.html :: nav}"></div>
 <br><br><br>
-<div class="container-fluid"> <div class="row">
+<div class="container">
 
+    <!-- fragments nav -->
+    <div th:replace="~{/fragments/nav.html :: nav}"></div>
     <!-- fragments sidebar -->
     <div th:replace="~{/fragments/sidebar.html :: sidebar}"></div>
 
@@ -70,9 +68,6 @@
     </div>
 </div>
 </div>
-<script src="listagem.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+<div th:replace="~{/fragments/scripts.html :: scripts}"></div>
