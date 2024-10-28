@@ -91,4 +91,31 @@ public class UserController {
         attributes.addFlashAttribute("mensagem", "Usuário excluído com sucesso!");
         return "redirect:/usuario";
     }
+
+    @GetMapping("/form-recuperar-senha")
+    public String formRecuperarSenha(Model model){
+        model.addAttribute("usuario", new User());
+
+        return "user/form-recuperar-senha";
+    }
+
+    @PostMapping("/recuperar-senha")
+    public String recuperarSenha(){
+
+
+        return "redirect:user/form-informar-codigo";
+    }
+
+    @GetMapping("/user/form-informar-codigo")
+    public String informarAtualizarSenha(Model model){
+
+        return "redirect:/validar-codigo";
+    }
+
+    @PostMapping("/validar-codigo")
+    public String validarCodigo(){
+
+        return "user/form-atualizar-senha";
+    }
+
 }
