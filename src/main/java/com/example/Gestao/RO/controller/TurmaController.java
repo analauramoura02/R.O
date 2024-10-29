@@ -19,9 +19,14 @@ public class TurmaController {
     @Autowired
     private TurmaRepository turmaRepository;
 
+    @GetMapping
+    public String listagem(Model model){
+        model.addAttribute("turmas", turmaRepository.findAll());
+        return "turma/listagem";
+    }
+
     @GetMapping("/form-inserir")
     public String formInserir(Model model){
-
         model.addAttribute("turma", new Turma());
         return  "turma/form-inserir";
     }
@@ -41,8 +46,4 @@ public class TurmaController {
         redirectAttributes.addFlashAttribute("mensagem", "Jogador salvo com sucesso!");
         return "redirect:/turma";
     }
-
-
-
-
 }
