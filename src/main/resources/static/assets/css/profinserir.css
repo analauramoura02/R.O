@@ -1,0 +1,37 @@
+
+
+
+
+.form-group img {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.form-group input[type="file"] {
+    width: auto;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-group button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-group button[type="reset"] {
+    background-color: #dc3545;
+}
+
+.button-group button:hover {
+    opacity: 0.9;
+}

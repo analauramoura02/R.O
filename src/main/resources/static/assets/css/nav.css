@@ -1,0 +1,94 @@
+body {
+    font-family: sans-serif;
+    background-color: #eaeaea;
+}
+.navbar{
+    background-color: #003366;
+    height: 50px;
+    border-radius: 3px;
+}
+
+.navbar-brand{
+        align-items: flex-end;
+    }
+
+.container {
+    display: flex;
+    height: 120vh;
+}
+.main {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.main h2 {
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza horizontalmente */
+
+}
+
+.user-profile {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.notification-icon {
+    margin-right: 0px;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.user-profile .bi {
+    margin-right: 10px;
+    font-size: 1em;
+    color: white;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+img{
+    width: 340px;
+    height: 225px;
+}
+
+/* Estilo para o Dropdown */
+.dropdown-menu {
+    background-color: #ffffff; /* Define a cor de fundo do menu igual à navbar */
+    border: none; /* Remove a borda do menu */
+    border-radius: 5px; /* Define o arredondamento das bordas */
+}
+
+.dropdown-item {
+    color: #ffffff; /* Define a cor do texto do menu */
+    padding: 10px 20px; /* Ajuste o espaçamento do texto */
+    font-weight: normal; /* Define o peso do texto */
+
+}
+
+.dropdown-item:hover {
+    background-color: #d3d3d3; /* Define a cor do hover */
+}
+.dropdown-toggle {
+    background-color: #003366; /* Define a cor de fundo do botão */
+    color: white; /* Define a cor do texto do botão */
+    box-shadow: none; /* Remove a sombra do botão */
+    border: none;
+}
+
+

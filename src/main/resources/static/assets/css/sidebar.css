@@ -1,0 +1,37 @@
+.sidebar {
+    background-color: #003366;
+    color: white;
+    width: 260px;
+    padding: 20px;
+    border-radius: 10px;
+    height: 880px;
+}
+
+.sidebar h1 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}x
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar li a:hover {
+    background-color: #003366;
+}
+
+.sidebar li svg {
+    margin-right: 10px;
+}

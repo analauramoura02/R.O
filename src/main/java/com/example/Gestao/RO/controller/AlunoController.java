@@ -19,7 +19,6 @@ public class AlunoController {
     @Autowired
     private AlunoRepository alunoRepository;
 
-
     @GetMapping
     public String listagem(Model model){
         model.addAttribute("alunos", alunoRepository.findAll());
