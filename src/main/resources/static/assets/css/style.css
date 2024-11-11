@@ -136,7 +136,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px; /* Ajuste para evitar sobrepor a navbar */
+    margin-top: 0px; /* Ajuste para evitar sobrepor a navbar */
     width: calc(100% - 260px); /* Faz o conteúdo ocupar o restante da tela */
     box-sizing: border-box;
 }
