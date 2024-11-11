@@ -43,7 +43,7 @@ public class TurmaController {
         }
 
         turmaRepository.save(turma);
-        redirectAttributes.addFlashAttribute("mensagem", "Jogador salvo com sucesso!");
+        redirectAttributes.addFlashAttribute("mensagem", "Turma salvo com sucesso!");
         return "redirect:/turma";
     }
 }

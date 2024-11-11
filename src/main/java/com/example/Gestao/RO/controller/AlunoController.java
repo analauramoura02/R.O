@@ -48,7 +48,7 @@ public class AlunoController {
         }
 
         alunoRepository.save(aluno);
-        redirectAttributes.addFlashAttribute("mensagem", "Jogador salvo com sucesso!");
+        redirectAttributes.addFlashAttribute("mensagem", "Aluno/a salvo com sucesso!");
         return "redirect:/aluno";
     }
 
