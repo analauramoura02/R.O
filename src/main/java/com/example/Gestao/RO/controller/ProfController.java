@@ -42,7 +42,7 @@ public class ProfController {
         }
 
         profRepository.save(professor);
-        redirectAttributes.addFlashAttribute("mensagem", "Jogador salvo com sucesso!");
+        redirectAttributes.addFlashAttribute("mensagem", "Professor salvo com sucesso!");
         return "redirect:/professor";
     }
 }

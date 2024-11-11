@@ -29,7 +29,6 @@ public class SecurityConfig {
     public WebSecurityCustomizer webSecurityCustomizer() {
         return (web) -> web.ignoring()
                 .requestMatchers(new AntPathRequestMatcher("/**"))
-                //.requestMatchers(new AntPathRequestMatcher("/usuario/**"))
                 .requestMatchers(new AntPathRequestMatcher("/assets/**"));
 
     }
